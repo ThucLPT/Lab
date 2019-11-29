@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Song</title>
+</head>
+<body>
+    {% for song in songs %}
+        {% if Id == song['id'] %}
+            <h2>Title: {{ song['title'] }}</h2>
+            <h2>Singer: {{ song['singer'] }}</h2>
+            <img src="{{ song['thumbnail'] }}">
+            <br>
+            <video controls>
+                <source src="{{ song['stream'] }}">
+            </video>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

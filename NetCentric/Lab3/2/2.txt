@@ -1,0 +1,11 @@
+Dependency Injection
+IOC
+ORM: JDPA, Hibernate
+
+SPA: Single Page Application
+Angular 6
+Bootstrap, jQuery
+
+System Architecture
+
+Onion model

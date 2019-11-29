@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Books.xsl"?>
+<books>
+    <book>
+        <isbn>0470114878</isbn>
+        <title>Beginning XML, 4th Edition(Programmer to Programmer)</title>
+        <author>David Hunter, Jeff Rafter, Joe Fawcett, Eric van Dist</author>
+        <publisher>Wrox</publisher>
+        <date>May 21, 2007</date>
+        <price>26.39</price>
+    </book>
+    
+    <book>
+        <isbn>0596007647</isbn>
+        <title>XML in a Nutshell, 3rd Edition</title>
+        <author>Elliotte Rusty Harold, Scott Means</author>
+        <publisher>O'Reilly Media, Inc</publisher>
+        <date>September 2004</date>
+        <price>26.37</price>
+    </book>
+    
+    <book>
+        <isbn>0596004206</isbn>
+        <title>Learning XML, 2nd Edition</title>
+        <author>Erik Ray</author>
+        <publisher>O'Reilly Media, Inc</publisher>
+        <date>September 22, 2003</date>
+        <price>26.37</price>
+    </book>
+    
+    <book>
+        <isbn>0130655678</isbn>
+        <title>Definitive XML Schema(The Charles Goldfarb Definitive XML Series)</title>
+        <author>Priscilla Walmsley</author>
+        <publisher>Prentice Hall</publisher>
+        <date>December 17, 2001</date>
+        <price>33.38</price>
+    </book>
+</books>

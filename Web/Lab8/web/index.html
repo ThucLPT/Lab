@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="presetValues()">
+        <h1>Register to become a member of the website</h1>
+        <form method="post" name="form" onsubmit="storeCookies()">
+            <p>Full name: <input type="text" name="name" required autofocus></p>
+            <p>Email: <input type="email" name="mail" required></p>
+            <p>Username: <input type="text" name="user" required></p>
+            <p>Choose a password: <input type="password" name="pass" required></p>
+            <p>Re-enter password: <input type="password" name="rpass" required></p>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+        <script src="Script.js"></script>
+    </body>
+</html>

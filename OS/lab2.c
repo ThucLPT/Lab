@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+#include <unistd.h>
+
+bool isInteger(char *num) {
+	int i;
+	for (i = 0; i < strlen(num); i++) {
+		if (num[i] < '0' || num[i] > '9')
+			return false;
+	}
+	return true;
+}
+
+void toBinary(int x, char *ans) {
+	int len = 0;
+	while (x) {
+		ans[len] = '0' + x % 2;
+		x /= 2;
+		len++;
+	}
+
+	int i;
+	for (i = 0; i < len / 2; i++) {
+		char temp = ans[i];
+		ans[i] = ans[len - 1 - i];
+		ans[len - 1 - i] = temp;
+	}
+	ans[len] = '\0';
+}
+
+int main(int argc, char *argv[]) {
+	char ans[100];
+	int i = 0;
+	for (i = 1; i < argc; i++) {
+		if (!isInteger(argv[i])) {
+			printf("%s is not a positive integer number\n", argv[i]);
+			continue;
+		}
+		if (fork() == 0) {
+			int num = atoi(argv[i]);
+			toBinary(num, ans);
+			printf("%d is %s in binary on process %d\n", num, ans, getpid());
+			exit(0);
+		}
+	}
+	return 0;
+}
